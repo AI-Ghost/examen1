@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Titulo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid text-center">
+        <div class="row bg-primary-subtle">
+          <div class="col-2">
+            <a class="navbar-brand" href="#">
+              <img src="./img/logo.jpg" class="rounded-5" alt="Bootstrap" width="50" height="50">
+            </a>          
+          </div>
+          <div class="col">
+            <div class="container text-center">
+                <h1 class="display-6">Empresa</h1>
+            </div>
+          </div>
+          <div class="col-2">
+            <a class="navbar-brand" href="#">
+                <img src="./img/avatar.jpg" class="rounded-5" alt="logo1" width="30" height="30">
+            </a>  
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+          </div>
+          <div class="col border">
+            <a class="btn border" routerLink="/inicio-component" routerLinkActive="active" ariaCurrentWhenActive="page">Inicio</a>
+            <a class="btn border" routerLink="/nosotros-component" routerLinkActive="active" ariaCurrentWhenActive="page">Nosotros</a>
+            <a class="btn border" routerLink="/noticias-component" routerLinkActive="active" ariaCurrentWhenActive="page">Noticias</a>
+          </div>
+          <div class="col-2">
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+          </div>
+          <div class="col border">
+            <router-outlet></router-outlet>
+          </div>
+          <div class="col-2">
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 border">
+            <p>&copy; 2024 Alianza</p>
+          </div>
+          <div class="col-6 border">
+            <p>Telefono: 099278374</p>
+            <p>Email: alianzasa&copy;outlook.com</p>
+          </div>
+        </div>  
+    </div>        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
